@@ -142,11 +142,14 @@ final class ScheduleViewModel: ObservableObject {
         schedules.sorted { $0.scheduledAt > $1.scheduledAt }
     }
 
+    // Keep recently-expired one-time schedules for one hour so history can reference them
+    private static let scheduleRetentionWindow: TimeInterval = 3600
+
     private func pruneExpired() {
         schedules = schedules.filter { msg in
             msg.status == .pending || msg.recurrenceRule != .none
                 ? true
-                : msg.scheduledAt > Date().addingTimeInterval(-3600)
+                : msg.scheduledAt > Date().addingTimeInterval(-Self.scheduleRetentionWindow)
         }
     }
 

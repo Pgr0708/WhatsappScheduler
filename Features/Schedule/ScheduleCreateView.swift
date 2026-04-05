@@ -152,9 +152,9 @@ struct ScheduleCreateView: View {
                 }
             }
             .sheet(isPresented: $showTemplatePicker) {
-                TemplatePickerView { template in
+                TemplatePickerView { @MainActor template in
                     messageBody = template.body
-                    Task { await templateVM.incrementUseCount(for: template) }
+                    await templateVM.incrementUseCount(for: template)
                     await historyVM.logTemplateUsed(template: template)
                 }
                 .environmentObject(templateVM)

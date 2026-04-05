@@ -121,7 +121,9 @@ final class WhatsAppService {
     /// Basic E.164 validation: starts with + and has 7–15 digits.
     func isValidPhoneNumber(_ phoneNumber: String) -> Bool {
         let sanitized = sanitize(phoneNumber: phoneNumber)
-        let pattern = #"^\+[1-9]\d{6,14}$"#
-        return sanitized.range(of: pattern, options: .regularExpression) != nil
+        return sanitized.range(of: Self.e164PhonePattern, options: .regularExpression) != nil
     }
+
+    /// E.164 format regex: '+' followed by 1–9 digit country code and 6–14 more digits.
+    private static let e164PhonePattern = #"^\+[1-9]\d{6,14}$"#
 }

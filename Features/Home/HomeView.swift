@@ -5,6 +5,8 @@ import SwiftUI
 
 struct HomeView: View {
 
+    private static let maxQuickContactsDisplayed = 5
+
     @EnvironmentObject var scheduleVM: ScheduleViewModel
     @EnvironmentObject var contactsVM: ContactsViewModel
     @State private var showCreateSchedule = false
@@ -45,7 +47,7 @@ struct HomeView: View {
             // Quick contacts strip
             .safeAreaInset(edge: .bottom) {
                 if !contactsVM.contacts.isEmpty {
-                    QuickContactStrip(contacts: contactsVM.contacts.prefix(5).map { $0 }) { contact in
+                    QuickContactStrip(contacts: contactsVM.contacts.prefix(HomeView.maxQuickContactsDisplayed).map { $0 }) { contact in
                         let prefilledMsg = ScheduledMessage(
                             recipientName: contact.name,
                             phoneNumber: contact.phoneNumber,

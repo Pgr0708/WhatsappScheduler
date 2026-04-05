@@ -111,11 +111,13 @@ final class HistoryViewModel: ObservableObject {
             .sink { [weak self] notification in
                 guard let self else { return }
                 let userInfo = notification.userInfo
-                let idStr  = userInfo?[kNotificationScheduleIDKey] as? String ?? ""
-                let phone  = userInfo?[kNotificationPhoneKey] as? String ?? ""
-                let sid    = UUID(uuidString: idStr)
+                guard
+                    let idStr = userInfo?[kNotificationScheduleIDKey] as? String,
+                    let sid   = UUID(uuidString: idStr),
+                    let phone = userInfo?[kNotificationPhoneKey] as? String
+                else { return }
                 Task {
-                    await self.logWhatsAppOpened(scheduleId: sid ?? UUID(), phone: phone)
+                    await self.logWhatsAppOpened(scheduleId: sid, phone: phone)
                 }
             }
             .store(in: &cancellables)

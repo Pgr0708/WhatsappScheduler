@@ -188,6 +188,9 @@ struct ProductRow: View {
         .background(
             RoundedRectangle(cornerRadius: DS.Radius.md)
                 .fill(isSelected ? DS.Color.whatsAppGreen.opacity(0.1) : DS.Color.secondaryBG)
+        )
+        .overlay(
+            RoundedRectangle(cornerRadius: DS.Radius.md)
                 .stroke(isSelected ? DS.Color.whatsAppGreen : Color.clear, lineWidth: 2)
         )
     }

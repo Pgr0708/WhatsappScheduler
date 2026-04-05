@@ -45,7 +45,10 @@ final class RevenueCatService: ObservableObject {
     @Published var isPurchasing: Bool = false
     @Published var purchaseError: String?
 
-    // MARK: - RevenueCat API Key (replace before shipping)
+    // MARK: - RevenueCat API Key
+    // ⚠️ Replace with your real key from the RevenueCat dashboard before shipping.
+    // Store the actual key in a Config.plist or xcconfig file that is git-ignored
+    // to prevent accidental exposure in version control.
     private let apiKey = "REPLACE_WITH_YOUR_REVENUECAT_API_KEY"
 
     private init() {}
