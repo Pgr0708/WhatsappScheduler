@@ -1,0 +1,195 @@
+/* Localizable.strings (English)
+   WhatsappScheduler
+*/
+
+// MARK: - Common
+"ok" = "OK";
+"cancel" = "Cancel";
+"save" = "Save";
+"delete" = "Delete";
+"edit" = "Edit";
+
+// MARK: - Onboarding
+"onboarding_title_1" = "Schedule WhatsApp Messages";
+"onboarding_subtitle_1" = "Plan your messages in advance and get reminded at the perfect time.";
+"onboarding_title_2" = "One-Tap WhatsApp Deep Link";
+"onboarding_subtitle_2" = "Tap your reminder → app opens WhatsApp with your message pre-filled. Just tap Send!";
+"onboarding_title_3" = "Templates & Quick Contacts";
+"onboarding_subtitle_3" = "Save your most-used messages and favorite contacts for lightning-fast scheduling.";
+"onboarding_title_4" = "Recurring & Reminders";
+"onboarding_subtitle_4" = "Set daily, weekly, or monthly reminders so you never miss an important message.";
+"onboarding_next" = "Next";
+"onboarding_skip" = "Skip";
+"onboarding_get_started" = "Get Started";
+
+// MARK: - Paywall
+"paywall_title" = "WhatsApp Scheduler Pro";
+"paywall_subtitle" = "Unlock all features and never miss a message";
+"paywall_feature_unlimited_title" = "Unlimited Schedules";
+"paywall_feature_unlimited_sub" = "Create as many scheduled reminders as you need";
+"paywall_feature_recurring_title" = "Recurring Messages";
+"paywall_feature_recurring_sub" = "Daily, weekly, monthly recurring reminders";
+"paywall_feature_templates_title" = "Unlimited Templates";
+"paywall_feature_templates_sub" = "Save and reuse your most frequent messages";
+"paywall_feature_sync_title" = "iCloud Sync";
+"paywall_feature_sync_sub" = "Access your schedules across all your devices";
+"paywall_feature_analytics_title" = "Analytics Dashboard";
+"paywall_feature_analytics_sub" = "Insights on your messaging patterns";
+"paywall_subscribe_button" = "Subscribe Now";
+"paywall_restore" = "Restore Purchases";
+"paywall_continue_free" = "Continue for Free";
+"paywall_legal_notice" = "Subscriptions auto-renew. Cancel anytime in Settings.";
+"paywall_products_unavailable" = "Products are not available right now. Please try again later.";
+
+// MARK: - Schedule
+"schedule_create_title" = "New Schedule";
+"schedule_edit_title" = "Edit Schedule";
+"schedule_section_recipient" = "Recipient";
+"schedule_field_name" = "Name (optional)";
+"schedule_field_phone" = "Phone (+1234567890)";
+"schedule_section_message" = "Message";
+"schedule_field_message_placeholder" = "Type your WhatsApp message…";
+"schedule_use_template" = "Use Template";
+"schedule_section_datetime" = "Date & Time";
+"schedule_field_datetime" = "Send at";
+"schedule_section_recurrence" = "Recurrence";
+"schedule_field_recurrence" = "Repeat";
+"schedule_field_days" = "Days";
+"schedule_section_preview" = "WhatsApp Deep Link Preview";
+"schedule_preview_invalid" = "Enter a valid phone number to preview the link";
+
+// MARK: - Recurrence
+"recurrence_none" = "None (one-time)";
+"recurrence_daily" = "Daily";
+"recurrence_weekly" = "Weekly";
+"recurrence_monthly" = "Monthly";
+
+// MARK: - Home
+"home_title" = "Scheduled Messages";
+"home_empty_title" = "No Schedules Yet";
+"home_empty_subtitle" = "Tap + to schedule your first WhatsApp message reminder.";
+"home_empty_action" = "Schedule a Message";
+"home_quick_contacts" = "Quick:";
+
+// MARK: - Templates
+"templates_title" = "Templates";
+"templates_empty_title" = "No Templates";
+"templates_empty_subtitle" = "Create reusable message templates to speed up scheduling.";
+"templates_add_first" = "Add First Template";
+"templates_search_prompt" = "Search templates…";
+"templates_pick_title" = "Choose Template";
+"templates_delete_confirm" = "Delete this template?";
+"template_create_title" = "New Template";
+"template_edit_title" = "Edit Template";
+"template_field_title_section" = "Title";
+"template_field_title" = "Template name";
+"template_field_body_section" = "Message Body";
+"template_field_category_section" = "Category";
+"template_field_category" = "Category";
+
+// MARK: - Contacts
+"contacts_title" = "Quick Contacts";
+"contacts_empty_title" = "No Quick Contacts";
+"contacts_empty_subtitle" = "Save frequently messaged contacts for one-tap scheduling.";
+"contacts_add_first" = "Add First Contact";
+"contacts_search_prompt" = "Search contacts…";
+"contacts_delete_confirm" = "Remove this quick contact?";
+"contact_create_title" = "New Contact";
+"contact_edit_title" = "Edit Contact";
+"contact_field_name" = "Name";
+"contact_field_phone" = "Phone number (+1234567890)";
+"contact_field_group_section" = "Group";
+"contact_field_group" = "Group (e.g. Family, Work)";
+
+// MARK: - History
+"history_title" = "History";
+"history_empty_title" = "No History Yet";
+"history_empty_subtitle" = "Your scheduling activity will appear here.";
+"history_search_prompt" = "Search history…";
+"history_filter_type" = "Filter by Type";
+"history_filter_all" = "All Events";
+"history_clear" = "Clear History";
+"history_clear_confirm" = "This will permanently delete all history. Are you sure?";
+"history_type_schedule_created" = "Schedule Created";
+"history_type_schedule_edited" = "Schedule Edited";
+"history_type_schedule_cancelled" = "Schedule Cancelled";
+"history_type_whatsapp_opened" = "WhatsApp Opened";
+"history_type_template_used" = "Template Used";
+"history_type_contact_used" = "Contact Used";
+
+// MARK: - Analytics
+"analytics_title" = "Analytics";
+"analytics_total_scheduled" = "Total Scheduled";
+"analytics_peak_hour" = "Peak Hour";
+"analytics_chart_daily" = "Schedules (Last 30 Days)";
+"analytics_top_contacts" = "Most Messaged Contacts";
+"analytics_top_templates" = "Most Used Templates";
+"analytics_peak_hour_desc" = "Peak messaging hour";
+
+// MARK: - Settings
+"settings_title" = "Settings";
+"settings_account" = "Account";
+"settings_subscription" = "Subscription";
+"settings_pro" = "Pro";
+"settings_free" = "Free";
+"settings_upgrade" = "Upgrade to Pro";
+"settings_restore" = "Restore Purchases";
+"settings_notifications" = "Notifications";
+"settings_notifications_status" = "Notifications";
+"settings_enabled" = "Enabled";
+"settings_disabled" = "Disabled";
+"settings_enable_notifications" = "Enable Notifications";
+"settings_appearance" = "Appearance";
+"settings_theme" = "Theme";
+"settings_theme_system" = "System";
+"settings_theme_light" = "Light";
+"settings_theme_dark" = "Dark";
+"settings_whatsapp_installed" = "WhatsApp Installed";
+"settings_yes" = "Yes";
+"settings_no" = "No";
+"settings_privacy" = "Privacy & Legal";
+"settings_privacy_policy" = "Privacy Policy";
+"settings_terms" = "Terms of Service";
+"settings_about" = "About";
+"settings_version" = "Version";
+"settings_sign_out" = "Sign Out";
+"settings_sign_out_confirm" = "Are you sure you want to sign out?";
+
+// MARK: - Tab Bar
+"tab_home" = "Home";
+"tab_templates" = "Templates";
+"tab_contacts" = "Contacts";
+"tab_history" = "History";
+"tab_analytics" = "Analytics";
+"tab_settings" = "Settings";
+
+// MARK: - Notifications
+"notification_title_format" = "💬 Remind: %@";
+"notification_action_open_whatsapp" = "Open WhatsApp";
+"notification_permission_denied" = "Please enable notifications in Settings to receive reminders.";
+
+// MARK: - WhatsApp Service Errors
+"whatsapp_not_installed" = "WhatsApp is not installed on this device.";
+"invalid_phone_number" = "Please enter a valid phone number with country code (e.g. +1234567890).";
+"invalid_url" = "Could not open the link. Please try again.";
+"whatsapp_error_title" = "Could Not Open WhatsApp";
+
+// MARK: - Validation
+"validation_error_title" = "Please Check Your Input";
+"validation_phone_required" = "A phone number is required.";
+"validation_phone_invalid" = "Please enter a valid phone number including country code, e.g. +1 (US) or +91 (India).";
+"validation_message_required" = "A message is required.";
+"validation_date_future" = "The scheduled date must be in the future.";
+
+// MARK: - iCloud
+"icloud_unavailable" = "iCloud is not available. Data will be stored locally on this device.";
+"record_not_found" = "Record not found.";
+
+// MARK: - Status
+"status_pending" = "Pending";
+"status_sent" = "Sent";
+"status_cancelled" = "Cancelled";
+"status_failed" = "Failed";
+
+// MARK: - Purchase
+"purchase_verification_failed" = "Purchase verification failed. Please try again.";

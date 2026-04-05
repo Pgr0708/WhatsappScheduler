@@ -1,0 +1,53 @@
+/* Localizable.strings (Arabic - RTL)
+   WhatsappScheduler
+*/
+
+// MARK: - Common
+"ok" = "موافق";
+"cancel" = "إلغاء";
+"save" = "حفظ";
+"delete" = "حذف";
+"edit" = "تعديل";
+
+// MARK: - Onboarding
+"onboarding_title_1" = "جدولة رسائل واتساب";
+"onboarding_subtitle_1" = "خطط لرسائلك مسبقاً واحصل على تذكير في الوقت المناسب.";
+"onboarding_title_2" = "رابط واتساب بنقرة واحدة";
+"onboarding_subtitle_2" = "انقر على تذكيرك ← يفتح التطبيق واتساب مع رسالتك مملوءة مسبقاً. فقط انقر إرسال!";
+"onboarding_title_3" = "قوالب وجهات الاتصال السريعة";
+"onboarding_subtitle_3" = "احفظ رسائلك الأكثر استخداماً وجهات اتصالك المفضلة للجدولة السريعة.";
+"onboarding_title_4" = "تكرار والتذكيرات";
+"onboarding_subtitle_4" = "اضبط تذكيرات يومية أو أسبوعية أو شهرية حتى لا تفوتك رسالة مهمة.";
+"onboarding_next" = "التالي";
+"onboarding_skip" = "تخطي";
+"onboarding_get_started" = "ابدأ الآن";
+
+// MARK: - Tab Bar
+"tab_home" = "الرئيسية";
+"tab_templates" = "القوالب";
+"tab_contacts" = "جهات الاتصال";
+"tab_history" = "السجل";
+"tab_analytics" = "الإحصائيات";
+"tab_settings" = "الإعدادات";
+
+// MARK: - Home
+"home_title" = "الرسائل المجدولة";
+"home_empty_title" = "لا توجد جداول بعد";
+"home_empty_subtitle" = "انقر على + لجدولة أول رسالة واتساب تذكيرية.";
+"home_empty_action" = "جدولة رسالة";
+
+// MARK: - Settings
+"settings_title" = "الإعدادات";
+"settings_sign_out" = "تسجيل الخروج";
+"settings_sign_out_confirm" = "هل أنت متأكد أنك تريد تسجيل الخروج؟";
+
+// MARK: - Notifications
+"notification_title_format" = "💬 تذكير: %@";
+"notification_action_open_whatsapp" = "فتح واتساب";
+
+// MARK: - Validation
+"validation_error_title" = "يرجى التحقق من المدخلات";
+"validation_phone_required" = "رقم الهاتف مطلوب.";
+"validation_phone_invalid" = "الرجاء إدخال رقم هاتف صالح مع رمز الدولة، مثال: +966 (السعودية) أو +20 (مصر).";
+"validation_message_required" = "الرسالة مطلوبة.";
+"validation_date_future" = "يجب أن يكون الموعد المحدد في المستقبل.";
