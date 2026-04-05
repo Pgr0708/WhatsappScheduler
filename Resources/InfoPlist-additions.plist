@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- App display name -->
+    <key>CFBundleDisplayName</key>
+    <string>WA Scheduler</string>
+
+    <!-- Required: declare whatsapp:// as a queried URL scheme so canOpenURL works -->
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>whatsapp</string>
+    </array>
+
+    <!-- Notification usage description (iOS prompts this before permission request) -->
+    <key>NSUserNotificationUsageDescription</key>
+    <string>WhatsApp Scheduler uses notifications to remind you when it's time to send a message.</string>
+
+    <!-- iCloud / CloudKit capability - configure in Xcode Signing & Capabilities tab -->
+    <!-- Add "iCloud" capability with CloudKit checked and container: iCloud.com.yourname.WhatsappScheduler -->
+
+    <!-- Privacy - no contacts access needed (manual entry only for MVP) -->
+    <!-- If you add Contacts import, uncomment: -->
+    <!--
+    <key>NSContactsUsageDescription</key>
+    <string>WhatsApp Scheduler can import your contacts to quickly add recipients.</string>
+    -->
+
+    <!-- Supported interface orientations (portrait only for phone) -->
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+    </array>
+
+    <!-- App Transport Security - allow Apple domains for iCloud/RevenueCat -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <false/>
+    </dict>
+
+    <!-- Minimum OS version -->
+    <key>MinimumOSVersion</key>
+    <string>17.0</string>
+</dict>
+</plist>
